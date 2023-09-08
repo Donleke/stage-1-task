@@ -4,15 +4,16 @@ body {
   background: url(bg.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
+  overflow: hidden;
 }
 
 .box {
-  width: 450px;
+  max-width: 35rem;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 40px;
   text-align: center;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 2%;
   color: #fff;
 }
 
@@ -26,16 +27,19 @@ img {
   font-size: 40px;
   letter-spacing: 4px;
   font-weight: 100;
+  margin-bottom: 20px;
 }
 .box h5 {
   font-size: 20px;
   letter-spacing: 3px;
   font-weight: 100;
+  margin-bottom: 20px;
 }
 
 .box p {
   font-size: 18px;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .icon {
