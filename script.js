@@ -22,11 +22,13 @@ document.addEventListener("DOMContentLoaded", function getDayAndTime() {
   }
 
   function getUTCTimeInMilliseconds() {
-    return new Date().getTime();
+    const now = new Date();
+    const utcString = now.toISOString().split("T")[1].substring(0, 8);
+    return utcString;
   }
 
-  dayOfWeekElement.textContent = `Today is ${getDayOfWeek()}`;
-  utcTimeElement.textContent = `UTC Time in Milliseconds: ${getUTCTimeInMilliseconds()}`;
+  dayOfWeekElement.textContent = `${getDayOfWeek()}`;
+  utcTimeElement.textContent = `${getUTCTimeInMilliseconds()}`;
 
   setInterval(getDayAndTime, 1);
 });
